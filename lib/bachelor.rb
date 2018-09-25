@@ -1,5 +1,12 @@
 def get_first_name_of_season_winner(data, season)
-  return data
+  full_name=""
+  data.to_sym[season.to_sym].each do |key|
+    if (key[:status]=="Winner")
+      full_name=key[:name]
+    end
+  end
+  output=full_name.split(" ")
+  output[0]
 end
 
 def get_contestant_name(data, occupation)
