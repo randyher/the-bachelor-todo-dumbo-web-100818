@@ -1,6 +1,6 @@
 def get_first_name_of_season_winner(data, season)
   full_name=""
-  data[":#{season}"].each do |key|
+  data[:#{season}].each do |key|
     if (key[:status]=="Winner")
       full_name=key[:name]
     end
