@@ -1,5 +1,5 @@
 def get_first_name_of_season_winner(data, season)
-  return data[season.to_sym][0][:name]
+  return data[:season 19][0][:name]
 end
 def get_contestant_name(data, occupation)
   # code here
